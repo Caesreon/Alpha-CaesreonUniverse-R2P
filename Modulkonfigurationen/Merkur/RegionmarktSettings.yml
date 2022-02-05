@@ -1,0 +1,112 @@
+###############################################
+#           Regionmarkt/Immobilien            #
+###############################################
+#                   Schema                    #
+#     m1 = 1 Block                            #
+#     m2 = Laenge x Breite                    #
+#     m3 = Laenge x Breite x Hoehe            #
+###############################################
+allgemein:
+  aktiviert: true
+  version: 1
+  prefix: '[Grundst\umlueck]'
+  regex: '&'
+text:
+permissions:
+  ehrenlegion: 'caesreon.commands.ehrenlegion.gs'
+  spieler: 'caesreon.commands.spieler.gs'
+grundpreis:
+  grundpreis_m2: 120
+  grundpreis_m3: 100
+  grundpreis_m1: 50
+erlaubte_welten:
+  - Ceres
+  - testwelt
+###############################################
+#
+#   Wenn Autopreis genutzt wird:
+#   Als Metrik kann hier m1, m2, m3 eingegeben werden
+#   Autopreis berechnet dann anhand der Metrik die Kosten anhand des Grundpreises
+#
+#   Wenn Autopreis auf false gesetzt wird, kann weiterhin eine Metrik eingegeben werden
+#   und der Grundpreis manuell ver�ndert werden
+#
+#   Wenn m3 empfiehlt es sich, Werte zwischen x<1 zu wählen, damit die Preise in Relation zueinander stehen
+
+gs_typ:
+  villen_gs:
+    auto_preis: true
+    metrik: 'm3'
+    preis: 0
+    m3_faktor: '0'
+    limit: 1
+  g_stadt_gs:
+    auto_preis: true
+    metrik: 'm3'
+    preis: 30
+    m3_faktor: '0.0098214'
+    limit: 1
+  k_stadt_gs:
+    auto_preis: true
+    metrik: 'm3'
+    preis: 20
+    m3_faktor: '0.012228'
+    limit: 1
+  legion_gs:
+    auto_preis: true
+    metrik: 'm3'
+    m3_faktor: '0'
+    preis: 20
+    limit: 1
+  shop_gs:
+    auto_preis: true
+    metrik: 'm3'
+    preis: 15
+    m3_faktor: '0.013058'
+    limit: 1
+  starter_gs:
+    auto_preis: true
+    metrik: 'm3'
+    preis: 10
+    m3_faktor: '0.029992'
+    limit: 1
+    #Hier gibt es keinen Faktor
+  freebuild:
+    auto_preis: true
+    metrik: 'm2'
+    preis: 500
+    limit: 100
+    gratis_claims: 9
+vermietung:
+  aktiviert: false
+gui:
+  hauptmenu:
+    titel: Caesreon Grundst\umluecke Men\umlue
+    item_meine_gs_owner: chain_command_block
+    item_meine_gs_owner.text: ''
+    item_meine_gs_member: chest
+    item_meine_gs_member.text: ''
+    item_gs_info: paper
+    item_gs_info.text: ''
+    item_gs_teleport: compass
+    item_gs_teleport.text: ''
+    item_hintergrund: gray_stained_glass_pane
+  meinegsowner:
+    titel: Meine Grundst\umluecke
+    item: grass
+  meinegsmember:
+    titel: Grundst\umlueck Mitgliedschaften
+    item: grass
+  info: null
+  gs_verwalten:
+    titel: ''
+  gs_freunde_verwalten:
+    titel: ''
+  gs_uebersicht:
+    titel: ''
+    item_verkaufen: ''
+    item_gs_verwalten: ''
+    item_gs_info: ''
+    item_freunde_verwalten: ''
+  freiegs:
+    titel: ''

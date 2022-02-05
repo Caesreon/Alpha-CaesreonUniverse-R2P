@@ -1,0 +1,209 @@
+regex: '&'
+#Name der Hauptlobby
+erlaubte_welten:
+  - 'Hub'
+bossbar:
+  aktiviert: true
+  text:
+    text_lobby: '&bHerzlich Wilkommen auf Caesreon!'
+    text_survival: 'Wilkommen auf dem Survival Server!'
+    text_creative: 'Wilkommen auf dem Creative Server!'
+  welt:
+    lobby: 'hub'
+    creative: 'citymap'
+    survival: 'malmundus'
+hotbar:
+  informationen:
+    titel: '&3Informationen (Klick mich)'
+    lore:
+      - '&b&m-------------------------------'
+      - '&7Was wir dir bieten:'
+      - '&7Freebuild + Citybuild'
+      - '&7Creative + WorldEdit'
+      - '&7Dungeon + Custom Items'
+      - '&8> &aKlicken f\umluer Infos'
+      - '&b&m-------------------------------'
+    material: 'COMPASS'
+    position: 0
+  survival:
+    titel: '&3Zum Survival Server (Klick mich)'
+    lore:
+      - '&b&m-------------------------------'
+      - '&7Unser Survival Server bietet dir:'
+      - '&7Custom Maps, Wirtschaft:'
+      - '&7Gesch\umluetzter Freebuild + Dungeon'
+      - '&8> &aKlicken f\umluer Teleport.'
+      - '&b&m-------------------------------'
+    material: 'CRAFTING_TABLE'
+    position: 2
+  creative:
+    titel: '&3Zum Creative Server (Klich mich)'
+    lore:
+      - '&b&m-------------------------------'
+      - '&7Unser Creative Server bietet dir:'
+      - '&7Plotwelten:'
+      - '&7100x100 sowie 500x500'
+      - '&7WorldEdit gegen Vote erh\umlaeltlich'
+      - '&8> &aKlicken f\umluer Teleport.'
+      - '&b&m-------------------------------'
+    material: 'REPEATING_COMMAND_BLOCK'
+    position: 4
+  projekte:
+    titel: '&3Sehenswerte Projekte (Klick mich)'
+    lore:
+      - '&b&m-------------------------------'
+      - '&bUnsere 5 bekanntesten Projekte'
+      - '&b&m-------------------------------'
+    material: 'NETHER_STAR'
+    position: 6
+  tutorial:
+    titel: '&3Zum Tutorial'
+    lore:
+      - '&b&m-------------------------------'
+      - '&7Du kannst unser Tutorial'
+      - '&7auf unserer Webseite lesen'
+      - '&7oder dieses Ingame besuchen'
+      - '&8> &aINFO: Aktuell nur Webseite'
+      - '&8> &aKlicken f\umluer Link.'
+      - '&b&m-------------------------------'
+    #Material wird fuer das TutorialItem ueberschrieben durch das /infobuch
+    material: 'WRITTEN_BOOK'
+    position: 8
+gui:
+  informationen:
+    titel: '&3Informationen'
+    hintergrund: 'light_blue_stained_glass_pane'
+    subitems:
+      regeln:
+        titel: '&3Regeln'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7Unsere Regeln findest du hier.'
+          - '&8> &aKlicken f\umluer Link.'
+          - '&b&m-------------------------------'
+        url: 'https://caesreon.de/Minecraft/Regeln'
+        material: 'END_CRYSTAL'
+        position: 10
+      wiki:
+        titel: '&3Wiki'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7Besuche unsere Wiki f\umluer weitere Infos'
+          - '&7Alternativ: /infobuch'
+          - '&8> &aKlicken f\umluer Link.'
+          - '&b&m-------------------------------'
+        url: 'https://forum.caesreon.de/forums/wiki.50/'
+        material: 'BOOKSHELF'
+        position: 12
+      discord:
+        titel: '&3Discord'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7Besuche uns auf unserem Discord  '
+          - '&b&m-------------------------------'
+        url: 'https://discord.com/invite/znQ5aX2'
+        material: 'ENDER_EYE'
+        position: 14
+      livemap:
+        titel: '&3Unsere Livemaps'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7Unsere Livemap findest du hier.'
+          - '&b&m-------------------------------'
+        url: 'http://livemap.caesreon.de:8999/'
+        material: 'FILLED_MAP'
+        position: 16
+      voteseiten:
+        titel: '&3Unsere Voteseiten'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7Wenn du uns unterst\umluetzen willst,'
+          - '&7w\umluerden wir uns \umlueber einen Vote'
+          - '&7sehr freuen.'
+          - '&b&m-------------------------------'
+        url:
+          seite1: 'https://minecraft-server.eu/server/index/21925'
+          seite2: 'https://www.minecraft-serverlist.net/vote/29708'
+          seite3: 'https://minecraft-servers.de/server/caesreon/vote'
+        material: 'heart_of_the_sea'
+        position: 20
+      socialmedia:
+        titel: '&3Folge uns auf..'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7Instagram, Facebook'
+          - '&7Twitter, Youtube'
+          - '&b&m-------------------------------'
+        url:
+          twitter: 'https://twitter.com/caesreon'
+          facebook: 'https://www.facebook.com/Caesreon/'
+          youtube: 'https://www.youtube.com/caesreon'
+          instagram: 'https://www.instagram.com/caesreon/'
+        material: 'EMERALD'
+        position: 22
+      changelog:
+        titel: '&3Changelog'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7Alle f\umluer dich relevanten \umlAEnderungen,'
+          - '&7findest du in unseren \umlAEnderungslog'
+          - '&8> &aKlicken f\umluer Link.'
+          - '&b&m-------------------------------'
+        url: 'https://forum.caesreon.de/threads/changelog.17'
+        material: 'COMPARATOR'
+        position: 24
+  projekte:
+    titel: '&3Sehenswerte Projekte'
+    hintergrund: 'light_blue_stained_glass_pane'
+    subitems:
+      kathedrale:
+        titel: '&6Red Rose Cathedral'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7 Name: Red Rose Cathedral'
+          - '&7 Bauzeit: 8 Jahre'
+          - '&7 Stil: Gotisch, Fantasy'
+          - '&7 Builder: Dominic / Vintageblocks'
+          - '&b&m-------------------------------'
+        material: 'filled_map'
+        position: 9
+      galleone:
+        titel: '&6La herencia de Lima'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7 Projekt: Spanische Galleone'
+          - '&7 Stil: Mittelalterlich, Schiff'
+          - '&7 Builder: Johnny1353'
+          - '&b&m-------------------------------'
+        material: 'filled_map'
+        position: 11
+      basilica:
+        titel: '&6Basilica'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7 Name: Basilica'
+          - '&7 Stil: Gotisch/Fantasy'
+          - '&7 Builder: Dominic / Vintageblocks'
+          - '&b&m-------------------------------'
+        material: 'filled_map'
+        position: 13
+      japan:
+        titel: '&6Japanischer Garten'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7 Japanisches Haus + Gartenanlage'
+          - '&7 Stil: Japanisch'
+          - '&7 Builder: Nefarias'
+          - '&b&m-------------------------------'
+        material: 'filled_map'
+        position: 15
+      solterra_spawn:
+        titel: '&6Fantasy Handelskontor'
+        lore:
+          - '&b&m-------------------------------'
+          - '&7 Mittelalterliche Hafeninsel'
+          - '&7 Stil: Mittelalterlich / Fantasy'
+          - '&7 Builder: Nefarias'
+          - '&b&m-------------------------------'
+        material: 'filled_map'
+        position: 17

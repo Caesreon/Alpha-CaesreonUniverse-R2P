@@ -1,0 +1,70 @@
+#Caesreon Configuration v1.3
+###############################################
+#       Allgemeine Konfigurationen            #
+###############################################
+debug: false
+prefix: '[CAE]'
+ingameprefix: '[Caesreon]'
+systemprefix: '[System] '
+bungeecord: 'true'
+###############################################
+#                   URL's                     #
+###############################################
+webseite_url: 'https://caesreon.de'
+konzept_url: 'https://caesreon.de/Minecraft/Konzept'
+wiki_url: 'https://forum.caesreon.de/forums/wiki.50/'
+forum_url: 'https://forum.caesreon.de'
+dsgvo_url: 'https://caesreon.de/Services/Datenschutz'
+regeln_url: 'https://caesreon.de/Minecraft/Regeln'
+livemap_url: 'http://livemap.caesreon.de:8999'
+discord_url: 'https://discord.gg/4fMv3hS'
+leitfaden_url: 'https://caesreon.de/Wiki/Allgemein/Erste_Schritte'
+###############################################
+#                   Module                    #
+###############################################
+#Achtung eines ist nun ausgelagert in Module! #
+befehle: true
+fliegen: true
+###############################################
+#           Offizielle-Server-Warps           #          
+#  Muss in LP fuer Spieler freigegeben werden  #
+###############################################
+creative: 'creativespawn'
+survival: 'lobby_to_ceres_spawn'
+hub: 'lobby_spawn'
+lobby: 'lobby_spawn'
+citybuild: 'lobby_to_ceres_spawn'
+kathedrale: 'kathedrale'
+dungeon: 'dungeonmain'
+tutorial: 'tutorial'
+japanhaus: 'japan'
+galleone: 'johnnygalleone'
+basilica: 'basilica'
+solterraspawn: 'solterra_hafen'
+###############################################
+#            Ultra Cosmetics                  #
+#  Muss in LP fuer Spieler freigegeben werden  #
+###############################################
+haustiere: 'uc menu pets'
+gadgets: 'uc menu gadgets'
+kopfbedeckungen: 'uc menu hats'
+outfits: 'uc menu suits'
+partikel: 'uc menu effects'
+cosmetics: 'uc menu main'
+###############################################
+#           Command Verzoegerungen             #
+###############################################
+back: 30
+###############################################
+#        Datenbank Konfigurationen            #
+###############################################
+#Allgemeine Datenbank Konfiguration fuer das System
+mysql:
+  server-address: 'IP'
+  port: '3306'
+  #Achtung wenn Username keine Berechtigung hat, muss vorher Root Account genutzt werden oder Berechtigung gesetzt
+  #werden welche es erlaubt Datenbanken zu erstellen
+  username: 'User'
+  passwort: 'Pass'
+  database: 'Datenbankname'
+  ssl: false

@@ -1,0 +1,46 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/bin/
+/target/
+*.secret
+/Gilde.java
+caesreon.core.system.netzwerk.NetzwerkAdressen
+/Modulkonfigurationen/Experimental/
+orio.java
+
+# Eclipse
+# -------
+*.classpath
+*.project
+*.settings
+
+# IntelliJ
+/out/
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+/bin
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommendersExperimental\
+NetzwerkAdressen.java
+IDENTIFIER.java
+DATENBANKEN.java
+DatanbankTabellenMySQL.java
+.idea\
+.idea\*
+artifacts\

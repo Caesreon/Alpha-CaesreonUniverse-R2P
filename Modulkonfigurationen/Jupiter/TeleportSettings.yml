@@ -1,0 +1,13 @@
+###############################################
+#     Caesreon Teleportations Service         #
+###############################################
+allgemein:
+  prefix: '[Teleport]'
+  regex: '&'
+  aktiviert: true
+erlaubte_welten:
+  - Ceres
+zufallsteleport:
+  #Sollte nicht groesser als die Weltgroesse/Worldborder sein
+  erlaubter_radius: 5000
+  kosten: 500

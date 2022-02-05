@@ -1,0 +1,25 @@
+###############################################
+#                     Fly                     #
+###############################################
+#Kosten in Caesh
+allgemein:
+  prefix: '[Caesreon]'
+  regex: '&'
+  aktiviert: true
+#Welten in welcher dieser Befehl nicht gehen darf
+verbotene_welten:
+  - hub
+#Kosten wenn Spieler /tempfly macht
+fly_kosten: 25000
+#Dauer in Stunden
+fly_dauer: 24
+#Benoetigt um ueber Luckperms den Fly ueber eine ZeitX zu vergeben in Form einer Berechtigungsgruppe
+fly_luckperms_gruppe: 'temp_fly'
+#Textmeldungen
+text:
+  fly_keine_berechtigung: 'Du hast leider keine Berechtigung um diesen Befehl auszuführen!'
+  fly_disabled: 'Du kannst nun nicht mehr fliegen!'
+  fly_enabled: 'Du kannst nun fliegen!'
+  fly_temp_enabled: 'Du kannst nun 24 Stunden fliegen!'
+  fly_nicht_genug_geld: 'Du kannst dir dies nicht leisten!'
+  fly_bereits_gekauft: 'Du hast bereits /tempfly gekauft!'

@@ -1,0 +1,30 @@
+allgemein:
+  prefix: '[Beruf]'
+  regex: '&'
+  befehl: ''
+  maximal-level: 200
+permission:
+  spieler: ''
+  team: ''
+geblockte_items:
+  - 'Cobalt Axt Lv1'
+  - 'Cobalt Axt Lv2'
+  - 'Cobalt Pickaxe'
+  - 'Adamantium Axt'
+  - 'Adamantium Hammer'
+  - 'Void Hammer Lv1'
+  - 'Void Hammer Lv2'
+  - 'Void Hammer Lv3'
+  - 'Void Hammer Lv4'
+  - 'Void Hammer Lv5'
+  - 'Void Hammer Lv6'
+  - 'Void Hammer Lv7'
+  - 'Gentle Hammer'
+  - 'Fortunas Hammer'
+  - 'Tech Hammer'
+meldungen:
+  belohnungen:
+    geld: ''
+    level: ''
+    xp: ''
+        

@@ -1,0 +1,136 @@
+name: Caesreon
+main: caesreon.main.SpigotMain
+depend: [ LuckPerms, UltimateVotes, WorldGuard ]
+website: caesreon.de
+version: 1.3.4.19
+api-version: 1.18
+author: Coriolanus_S
+commands:
+  survival:
+    description: 'Teleportiert dich zum Survival-Hub'
+    usage: /survival
+    permission: caesreon.commands.spieler.basis
+  hub:
+    description: 'Teleportiert dich zum Survival-Hub'
+    usage: /survival
+    permission: caesreon.commands.spieler.basis
+  creative:
+    description: 'Teleportiert dich zum Creative-Hub'
+    usage: /creative
+    permission: caesreon.commands.spieler.basis
+  lobby:
+    description: 'Teleportiert dich zur Lobby'
+    usage: /lobby
+    permission: caesreon.commands.spieler.basis
+  citybuild:
+    description: 'Teleportiert dich zum Citybuild'
+    usage: /citybuild
+    permission: caesreon.commands.spieler.basis
+  tutorial:
+    description: 'Teleportiert dich zum Tutorial'
+    usage: /tutorial
+    permission: caesreon.commands.spieler.basis
+  kathedrale:
+    description: 'Teleportiert dich zur Kathedrale'
+    usage: /kathedrale
+    permission: caesreon.commands.spieler.basis
+  dungeon:
+    description: 'Teleportiert dich zum Dungeon'
+    usage: /dungeon
+    permission: caesreon.commands.spieler.basis
+  infobuch:
+    description: 'Ein Buch mit den wichtigsten Befehlen'
+    usage: /infobuch
+    permission: caesreon.commands.spieler.basis
+  orio:
+    description: 'Beschwoere ein wildes Orio'
+    usage: /orio
+    permission: caesreon.commands.spieler.basis.orio
+  quack:
+    description: 'Beschwoere ein wildes Orio'
+    usage: /quack
+    permission: caesreon.commands.spieler.basis.quack
+  cosmetics:
+    description: 'Zeigt Caesreon Cosmetics an'
+    usage: /cosmetics
+    permission: caesreon.commands.spieler.erweitert
+  haustiere:
+    description: 'Zeigt Haustiere an'
+    usage: /haustiere
+    permission: caesreon.commands.spieler.erweitert
+  outfits:
+    description: 'Zeigt Outfits an'
+    usage: /outfits
+    permission: caesreon.commands.spieler.erweitert
+  kopfbedeckungen:
+    description: 'Zeigt Kopfbedeckungen an'
+    usage: /kopfbedeckungen
+    permission: caesreon.commands.spieler.premium
+  gadgets:
+    description: 'Zeigt Gadgets an'
+    usage: /gadgets
+    permission: caesreon.commands.spieler.premium
+  partikel:
+    description: 'Zeigt Partikel-Effekte an'
+    usage: /partikel
+    permission: caesreon.commands.spieler.premium
+  fly:
+    description: 'Toggled Fly'
+    usage: /fly
+    permission: caesreon.commands.fly
+  flyspeed:
+    description: 'Aendert Flyspeed'
+    usage: /flyspeed <Wert> (Zwischen 0-1)
+    permission: caesreon.commands.flyspeed
+  tempfly:
+    description: 'Zeitlich begrenzter Fly gegen Spielergeld'
+    usage: /tempfly
+    permission: caesreon.commands.tempfly
+  mail:
+    description: 'Sende Nachrichten an Spieler welche Offline sind'
+    usage: /mail senden /mail empfangen
+    permission: caesreon.commands.spieler.basis
+  uwu:
+    description: 'Lade Spieler ein und werde belohnt'
+    usage: /uwu code <subcommand>
+    permission: caesreon.commands.spieler.basis
+  geld:
+    description: 'Caesreon Wirtschaft'
+    usage: /geld <senden> <spielername>
+    permission: caesreon.commands.spieler.basis
+  belohnung:
+    description: 'Login Belohnungen'
+    usage: /belohnung
+    permission: caesreon.commands.spieler.loginbelohnung
+  cae:
+    description: 'System-Backend'
+    usage: ''
+    permission: caesreon.commands.admin
+  es:
+    description: ''
+    usage: /es
+    permission: caesreon.items.admin.elderstab
+  gs:
+    description: 'Caesreon Region-Markt'
+    usage: /gs
+    permission: caesreon.commands.spieler.gs
+  beruf:
+    description: 'Caesreon Berufe'
+    usage: /beruf
+    permission: caesreon.commands.spieler.beruf
+  ctp:
+    description: 'Caesreon Teleportations Service'
+    usage: /ctp
+    permission: caesreon.commands.spieler.basis
+  pvp:
+    description: 'Caesreon PvP Service'
+    usage: /pvp
+    permission: caesreon.commands.spieler.basis
+  skynet:
+    description: 'Caesreon CIS'
+    usage: '/skynet'
+    permission: caesreon.commands.admin
+  nationalbank:
+    description: 'Caesreon Nationalbank'
+    usage: '/nationalban /nb'
+    permission: caesreon.commands.admin

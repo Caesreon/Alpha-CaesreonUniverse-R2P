@@ -1,0 +1,21 @@
+###############################################
+#        Datenbank Konfigurationen            #
+###############################################
+mysql:
+  server-address: 'IP'
+  port: '3306'
+  #Achtung wenn Username keine Berechtigung hat, muss vorher Root Account genutzt werden oder Berechtigung gesetzt
+  #werden welche es erlaubt Datenbanken zu erstellen
+  username: 'User'
+  passwort: 'Pass'
+  database: 'Datenbankname'
+  table_referrer: ''
+  table_referee: ''
+  ssl: false
+###############################################
+#        Allgemeine Konfigurationen           #
+###############################################
+prefix: "[Caesreon]"
+belohnung: 500
+aktiviert: true
+version: '1'

@@ -1,0 +1,59 @@
+#############################################################   
+#    Schema                                                 #
+#    Typ Item Anzahl                                        #
+#                                                           #
+#    Zul�ssige Typen:                                       # 
+#    M = Material, C = Custom B = Befehl                    #
+#                                                           # 
+#    Zul�ssige Befehle                                      # 
+#    geld, tempfly                                          # 
+#                                                           # 
+#    Beispiele                                              #
+#    M GOLD_BLOCK 10                                        # 
+#    B tempfly 2 (W�rde 2 Stunden Tempfly geben)            # 
+#    B geld 500 (W�rde Spieler 500 Caesh geben              #
+#                                                           # 
+#############################################################
+allgemein:
+  prefix: '[Belohnung]'
+  aktiviert: true
+  version: 1
+  regex: '&'
+text:
+  tagesbelohnung: '&2Heutige Belohnung'
+  monatsbelohnung: '&2Alle Belohnungen'
+#Reset wird vom System benötigt um zu bestimmen ob ein Reset am 1. des Monats stattgefunden hat oder nicht
+reset: 'true'
+#############################################################
+belohnungen:
+  tag1: 'M crying_obsidian 16'
+  tag2: 'B geld 100'
+  tag3: 'M Spyglass 1'
+  tag4: 'M totem_of_undying 1'
+  tag5: 'M bread 64'
+  tag6: 'B geld 200'
+  tag7: 'M netherite_ingot 3'
+  tag8: 'M azalea 32'
+  tag9: 'M amethyst_shard 16'
+  tag10: 'B geld 300'
+  tag11: 'M scute 16'
+  tag12: 'M turtle_egg 4'
+  tag13: 'M redstone_block 64'
+  tag14: 'M netherite_ingot 4'
+  tag15: 'M powder_snow_bucket 3'
+  tag16: 'M lapis_lazuli 64'
+  tag17: 'B geld 400'
+  tag18: 'M axolotl_bucket 1'
+  tag19: 'M glow_lichen 64'
+  tag20: 'M flowering_azalea 32'
+  tag21: 'M dragon_egg 1'
+  tag22: 'M geld 500'
+  tag23: 'M trident 1'
+  tag24: 'M experience_bottle 64'
+  tag25: 'M elytra 1'
+  tag26: 'M nether_star 1'
+  tag27: 'M enchanted_golden_apple 1'
+  tag28: 'M sculk_sensor 8'
+  tag29: 'M music_disc_otherside 1'
+  tag30: 'B geld 600'
+  tag31: 'B tempfly 1'

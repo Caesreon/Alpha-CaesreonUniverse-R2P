@@ -1,0 +1,72 @@
+#Angezeigter Name des Berufes
+name: 'Landwirt'
+#Oeffentliche Beschreibung des Berufes
+beschreibung: 'Verdiene Caesh durch  das bewirtschaften von Feldern.'
+#Farbe, wie der Beruf im Chat dargestellt wird
+chatfarbe: '&f'
+#Item, welches stellvertretend fuer den Beruf in der GUI angezeigt werden soll
+gui-item: brick_stairs
+#Moegliche Handlungen: bauen, abbauen, craften, toeten, zaehmen
+regex: '&'
+maximal_level: 100
+handlungen:
+  abbauen:
+    #Fertiges Produkit
+    pumkin:
+      einkommen: 0.3
+      erfahrung: 0.3
+    melon:
+      einkommen: 0.3
+      erfahrung: 0.3
+    beetroots_3:
+      einkommen: 0.05
+      erfahrung: 0.05
+    wheat_7:
+      einkommen: 0.05
+      erfahrung: 0.05
+    carrots_7:
+      einkommen: 0.3
+      erfahrung: 0.3
+    cocoa_2:
+      einkommen: 0.1
+      erfahrung: 0.1
+    #Saatgut
+    wheat_0:
+      einkommen: -0.02
+      erfahrung: -0.02
+    beetroots_0:
+      einkommen: -0.02
+      erfahrung: -0.02
+    pumkin_stem:
+      einkommen: -0.02
+      erfahrung: -0.02
+    melon_stem:
+      einkommen: -0.02
+      erfahrung: -0.02
+  bauen:
+    #Saatgut
+    wheat_0:
+      einkommen: 0.02
+      erfahrung: 0.02
+    beetroots_0:
+      einkommen: 0.02
+      erfahrung: 0.02
+    pumkin_stem:
+      einkommen: 0.02
+      erfahrung: 0.02
+    carrots_0:
+      einkommen: 0.02
+      erfahrung: 0.02
+    melon_stem:
+      einkommen: 0.02
+      erfahrung: 0.02
+    cocoa_0:
+      einkommen: 0.02
+      erfahrung: 0.02
+    #Fertiges Produkt
+    pumkin:
+      einkommen: -0.3
+      erfahrung: -0.3
+    melon:
+      einkommen: -0.3
+      erfahrung: -0.3

@@ -1,0 +1,37 @@
+###############################################
+#               Wirtschaft-Modul              #
+###############################################
+allgemein:
+  prefix:
+    bank: '[Bank]'
+waeherung:
+  name: 'Caesh'
+serverbank:
+  name: 'Nationalbank'
+  vUUID: 'ffffffff-ffff-ffff-ffff-000000000000'
+startgeld: 1690
+###############################################
+#        Datenbank Konfigurationen            #
+###############################################
+mysql:
+  server-address: 'IP'
+  port: '3306'
+  username: 'User'
+  passwort: 'Pass'
+  database: 'Databasename'
+  table_accounts: ''
+  ssl: false
+###############################################
+#        Allgemeine Konfigurationen           #
+###############################################
+EconomyBridge:
+  #Wenn aktiviert speichert dies Spielerdaten in einem hier festgelegtem Intervall
+  #Dies limitiert DataLoss bei einem Hardcrash unseres Servers
+  saveDataTask:
+    enabled: true
+    #Intervall in Minuten
+    interval: 3
+    #Nachrichten im Log ausstellen
+    hideLogMessages: false
+enabled: 'true'
+version: '1'

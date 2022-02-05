@@ -1,0 +1,20 @@
+###############################################
+#                     PVP                     #
+###############################################
+allgemein:
+  prefix: '[Caesreon]'
+  regex: '&'
+  aktiviert: true
+#Welten in welcher dieser Befehl nicht gehen darf
+erlaubte_welten:
+  - Ceres
+  - testwelt
+  - Nether
+  - End
+  - Farmwelt
+pvp_spieler:
+#Textmeldungen
+text:
+  pvp_aktiviert: 'Du hast erfolgreich PVP aktiviert und bist nun angreifbar!'
+  pvp_deaktiviert: 'Du hast erfolgreich PVP deaktiviert und bist nun nicht mehr angreifbar!'
+  pvp_abgelehnt: 'Du kannst diesen Spieler nicht verwunden weil PVP bei mindestens einem Spieler deaktiviert ist'

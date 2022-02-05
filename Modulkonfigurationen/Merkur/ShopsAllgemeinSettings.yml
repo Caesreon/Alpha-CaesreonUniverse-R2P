@@ -1,0 +1,21 @@
+###############################################
+#                Caesreon Shops               #
+###############################################
+allgemein:
+  aktiviert: true
+  version: 1
+  prefix: '[Shop]'
+  regex: '§'
+text:
+permissions:
+  spieler: 'caesreon.commands.shops'
+erlaubte_welten:
+  - 'Malmundus'
+  - 'Orsoy'
+  - 'Ceres'
+schilder:
+  beschriftungen:
+    kaufen: '[Kaufen]'
+    verkaufen: '[Verkaufen]'
+    adminShopKaufen: '[A-Kaufen]'
+firmenbezeichner: '[Warenhaus]'

@@ -1,0 +1,182 @@
+#Angezeigter Name des Berufes
+name: 'Minenarbeiter'
+#Oeffentliche Beschreibung des Berufes
+beschreibung: 'Verdiene Caesh durch  abbauen von Erzen.'
+#Farbe, wie der Beruf im Chat dargestellt wird
+chatfarbe: '&f'
+#Item, welches stellvertretend fuer den Beruf in der GUI angezeigt werden soll
+gui-item: brick_stairs
+#Moegliche Handlungen: bauen, abbauen, craften, toeten, zaehmen
+regex: '&'
+maximal_level: 100
+handlungen:
+  abbauen:
+    iron_ore:
+      einkommen: 0.7
+      erfahrung: 1
+    deepslate_iron_ore:
+      einkommen: 0.7
+      erfahrung: 1
+    copper_ore:
+      einkommen: 0.5
+      erfahrung: 1
+    deepslate_copper_ore:
+      einkommen: 0.5
+      erfahrung: 1
+    gold_ore:
+      einkommen: 1.5
+      erfahrung: 3
+    deepslate_gold_ore:
+      einkommen: 1.5
+      erfahrung: 3
+    redstone_ore:
+      einkommen: 0.9
+      erfahrung: 1.8
+    deepslate_redstone_ore:
+      einkommen: 0.9
+      erfahrung: 1.8
+    emerald_ore:
+      einkommen: 1.5
+      erfahrung: 3
+    deepslate_emerald_ore:
+      einkommen: 1.5
+      erfahrung: 3
+    lapis_ore:
+      einkommen: 2
+      erfahrung: 4
+    deepslate_lapis_ore:
+      einkommen: 2
+      erfahrung: 4
+    diamond_ore:
+      einkommen: 3.5
+      erfahrung: 7
+    deepslate_diamond_ore:
+      einkommen: 3.5
+      erfahrung: 7
+    nether_gold_ore:
+      einkommen: 1
+      erfahrung: 2
+    nether_quartz_ore:
+      einkommen: 1.5
+      erfahrung: 3
+    gilded_blackstone:
+      einkommen: 2.5
+      erfahrung: 5
+    crying_obsidian:
+      einkommen: 5
+      erfahrung: 10
+    ancient_debris:
+      einkommen: 10
+      erfahrung: 20
+    amethyst_block:
+      einkommen: 1.5
+      erfahrung: 3
+    budding_amethyst:
+      einkommen: 2
+      erfahrung: 3
+    small_amethyst_bud:
+      einkommen: 2
+      erfahrung: 3
+    medium_amethyst_bud:
+      einkommen: 2
+      erfahrung: 3
+    large_amethyst_bud:
+      einkommen: 2
+      erfahrung: 3
+    amethyst_cluster:
+      einkommen: 2
+      erfahrung: 3
+    glowstone:
+      einkommen: 1
+      erfahrung: 2
+    coal_ore:
+      einkommen: 1
+      erfahrung: 2
+    deepslate_coal_ore:
+      einkommen: 1
+      erfahrung: 2
+  bauen:
+    iron_ore:
+      einkommen: -0.7
+      erfahrung: -1
+    deepslate_iron_ore:
+      einkommen: -0.7
+      erfahrung: -1
+    copper_ore:
+      einkommen: -0.5
+      erfahrung: -1
+    deepslate_copper_ore:
+      einkommen: -0.5
+      erfahrung: -1
+    gold_ore:
+      einkommen: -1.5
+      erfahrung: -3
+    deepslate_gold_ore:
+      einkommen: -1.5
+      erfahrung: -3
+    redstone_ore:
+      einkommen: -0.9
+      erfahrung: -1.8
+    deepslate_redstone_ore:
+      einkommen: -0.9
+      erfahrung: -1.8
+    emerald_ore:
+      einkommen: -1.5
+      erfahrung: -3
+    deepslate_emerald_ore:
+      einkommen: -1.5
+      erfahrung: -3
+    lapis_ore:
+      einkommen: -2
+      erfahrung: -4
+    deepslate_lapis_ore:
+      einkommen: -2
+      erfahrung: -4
+    diamond_ore:
+      einkommen: -3.5
+      erfahrung: -7
+    deepslate_diamond_ore:
+      einkommen: -3.5
+      erfahrung: -7
+    nether_gold_ore:
+      einkommen: -1
+      erfahrung: -2
+    nether_quartz_ore:
+      einkommen: -1.5
+      erfahrung: -3
+    gilded_blackstone:
+      einkommen: -2.5
+      erfahrung: -5
+    crying_obsidian:
+      einkommen: -5
+      erfahrung: -10
+    ancient_debris:
+      einkommen: -10
+      erfahrung: -20
+    amethyst_block:
+      einkommen: -1.5
+      erfahrung: -3
+    budding_amethyst:
+      einkommen: -2
+      erfahrung: -3
+    small_amethyst_bud:
+      einkommen: -2
+      erfahrung: -3
+    medium_amethyst_bud:
+      einkommen: -2
+      erfahrung: -3
+    large_amethyst_bud:
+      einkommen: -2
+      erfahrung: -3
+    amethyst_cluster:
+      einkommen: -2
+      erfahrung: -3
+    glowstone:
+      einkommen: -1
+      erfahrung: -2
+    coal_ore:
+      einkommen: -1
+      erfahrung: -2
+    deepslate_coal_ore:
+      einkommen: -1
+      erfahrung: -2 

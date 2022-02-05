@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="UltimateVotes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Dependencies/boss.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Dependencies/Legacy.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Dependencies/UltimateVotes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,63 @@
+#Angezeigter Name des Berufes
+name: 'Bauherr'
+#Oeffentliche Beschreibung des Berufes
+beschreibung: 'Verdiene Caesh durch das Erbauen von Geb\umlaeuden und Strukturen.'
+#Farbe, wie der Beruf im Chat dargestellt wird
+chatfarbe: '&f'
+#Item, welches stellvertretend fuer den Beruf in der GUI angezeigt werden soll
+gui-item: 'brick_stairs'
+#Moegliche Handlungen: bauen, abbauen, craften, toeten, zaehmen
+regex: '&'
+maximal_level: 100
+
+handlungen:
+  abbauen:
+    oak_log:
+      einkommen: 0.43
+      erfahrung: 0.8
+    dark_oak_log:
+      einkommen: 0.43
+      erfahrung: 0.8
+    birch_log:
+      einkommen: 0.43
+      erfahrung: 0.8
+    spruce_log:
+      einkommen: 0.43
+      erfahrung: 0.8
+    jungle_log:
+      einkommen: 0.43
+      erfahrung: 0.8
+    acacia_log:
+      einkommen: 0.43
+      erfahrung: 0.8
+    crimson_stem:
+      einkommen: 2
+      erfahrung: 2
+    warped_stem:
+      einkommen: 2
+      erfahrung: 2
+  bauen:
+    oak_log:
+      einkommen: -0.9
+      erfahrung: 0
+    dark_oak_log:
+      einkommen: -0.9
+      erfahrung: 0
+    birch_log:
+      einkommen: -0.9
+      erfahrung: 0
+    spruce_log:
+      einkommen: -0.9
+      erfahrung: 0
+    jungle_log:
+      einkommen: -0.9
+      erfahrung: 0
+    acacia_log:
+      einkommen: -0.9
+      erfahrung: 0
+    crimson_stem:
+      einkommen: -2.7
+      erfahrung: 0
+    warped_stem:
+      einkommen: -2.7
+      erfahrung: 0
