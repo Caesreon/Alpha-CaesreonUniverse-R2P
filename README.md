@@ -84,9 +84,11 @@ Wichtig: Core-Befehle werden grundlegend immer ausgeführt. Diese sind nicht dea
 
 #### Konfigurationshinweis!
 
-Umlaute können in den Konfigurationsdateien nicht genutzt werden da aktuell beim erstellen der jeweiligen
-Konfigurationsdatein diese schlicht und einfach nicht unterstützt werden. Folgende unten aufgeführte Sequenzen können
-allerdings anstelle des jeweiligen Umlauts eingesetzt werden, damit der Umlaut im Spiel richtig angezeigt wird.
+Umlaute können in den Konfigurationsdateien nicht sauber genutzt werden da aktuell beim Erstellen der jeweiligen
+Konfigurationsdateien unter Linux der Encoding Standard ISO-8859 genutzt wird und dieser nicht unterstützt wird von Java.
+Folgende unten aufgeführte Sequenzen können allerdings anstelle des jeweiligen Umlauts eingesetzt werden,
+damit der Umlaut im Spiel richtig angezeigt wird.
+
 
 | Umlaut | Variante 1 | Variante 2 |
 |:------:|------------|------------|
