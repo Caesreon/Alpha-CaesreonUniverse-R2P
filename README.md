@@ -8,10 +8,26 @@ Fehlende Module:
 
 ## Allgemein
 
-Das Caesreon Server Plugin ist die Hauptapplikation unseres Minecraft Servers und modular entwickelt worden. Jedes Modul
-kann in den Konfigurationsdateien konfiguriert, aktiviert bzw. deaktiviert werden. Dabei ist dieses Plugin als "Agent"
-konzipiert worden und muss auf jedem einzelnen Server/Sub Server installiert sein, damit die MySQL basierten Module wie
-die Multi-Server-Economy-Brücke funktionieren.
+Das Caesreon Server Plugin ist die Hauptapplikation unseres Minecraft Servers und modular entwickelt worden. 
+Je nach Runtime Modus kann dieses Plugin auf einem Spigot-Server als "Agent" und auf einem BungeeCord-Server als "Proxy" installiert werden.
+
+Dabei muss dieses Plugin auf jedem einzelnen Server/Sub Server installiert sein,
+damit die datenbankbasierten Module funktionieren.
+
+Zudem kann jedes Modul bzw. Submodul in den Konfigurationsdateien konfiguriert, aktiviert bzw. deaktiviert werden.
+
+
+Im RuntimeModus.SPIGOT ist es dabei unerheblich, wie viele Instanzen innerhalb 
+eines physischen oder virtualisierten Servernetzwerkes genutzt werden.
+
+Ein Beispiel: <br>
+Im RuntimeModus.SPIGOT, welcher in der config.yml aktiviert wird mit: bungeecord: 'false', funktioniert dieses Plugin mit allen
+Funktionen auf einem einzigen Server. Unterschiede fänden sich hier allerdings dann im Handling von
+bestimmten Befehlen (bspw. Teleportationsbefehle), welche dann zusätzlich über die config.yml konfiguriert werden müssten<br>
+
+Ist der Runtime Modus BUNGEE aktiviert (config.yml -> bungeecord: 'true'), muss mindestens ein Spigot Server
+und ein Bungeecord Proxy-Server vorhanden sein und das Plugin auf beiden installiert sein, damit beide Server über dieses Plugin
+miteinander kommunizieren können.
 
 ## Dokumentation: Core & Services
 
@@ -53,7 +69,7 @@ Wichtig: Core-Befehle werden grundlegend immer ausgeführt. Diese sind nicht dea
 
 #### Administrator-Befehle
 
-- /cae sys reload (Liest alle Konfigurationsdateien neu ein)
+- /cae sys reload (Liest alle Konfigurationsdateien neu ein, aktuell nicht funktional)
 
 #### Permissions:
 
@@ -84,7 +100,7 @@ allerdings anstelle des jeweiligen Umlauts eingesetzt werden, damit der Umlaut i
 
 ### Services
 
-#### Caesreon Wirtscafts Service
+#### Caesreon Wirtschaft's Service
 
 Das Modul Wirtschaft umfasst eine Standalone Wirtschaft welche global genutzt werden kann und über die PlaceholderAPI
 auch durch andere Plugins abgefragt werden kann. Außerdem fungiert dieses Modul durch die MySQL Datenbank auch als "
@@ -93,7 +109,7 @@ Economy-Bridge", welche den Kontostand des Spielers über mehrere Server hinweg 
 ##### Funktionsweise:
 
 Um eine möglichst hohe Performance zu erzielen und um die SQL Last zu mindern, wird der Kontostand des Spielers inform
-einer Hashmap im Servercache gespeichert sobald dieser sich auf unserem Server einloggt. Alle auf den Kontostand
+einer Hashmap im Servercache gespeichert, sobald dieser sich auf unserem Server einloggt. Alle auf den Kontostand
 zugreifenden Methoden fragen dabei den Cached Hashwert ab, während alle modifizierenden Methoden den Spielerkontostand
 direkt in der Datenbank un den Cached Hashwert verändern. Loggt der Spieler sich aus, wird der Hashwert in die Datenbank
 übertragen und der Spieler aus dem Cache entfernt.
@@ -109,12 +125,12 @@ direkt in der Datenbank un den Cached Hashwert verändern. Loggt der Spieler sic
 
 ##### Teambefehle:
 
-- /geld setzen [Spielername] <Betrag> - Setzt den Geldwert des Spielers absolut
-- /geld geben [Spielername] <Betrag> - Addiert Betrag zum aktuellen Kontostand des Spielers
-- /geld geben [Spielername] <Betrag> <Verwendungszweck> - Addiert Betrag zum aktuellen Kontostand des Spielers und
+- /geld setzen [Spielername] <Betrag> - setzt den Geldwert des Spielers absolut
+- /geld geben [Spielername] <Betrag> - addiert Betrag zum aktuellen Kontostand des Spielers
+- /geld geben [Spielername] <Betrag> <Verwendungszweck> - addiert Betrag zum aktuellen Kontostand des Spielers und
   begründet Vorgang in Transaktionslog
-- /geld abziehen [Spielername] <Betrag> - Subtrahiert Betrag zum aktuellen Kontostand des Spielers
-- /geld einsehen [Spielername] - Zeigt den Kontostand eines Spielers an
+- /geld abziehen [Spielername] <Betrag> - subtrahiert Betrag zum aktuellen Kontostand des Spielers
+- /geld einsehen [Spielername] - zeigt den Kontostand eines Spielers an
 
 ##### Permissiongruppe:
 
@@ -122,7 +138,7 @@ direkt in der Datenbank un den Cached Hashwert verändern. Loggt der Spieler sic
 
 ##### Placeholders:
 
-- %cae_kontostand% - Gibt Kontostand des Spielers als String wieder
+- %cae_kontostand% - gibt Kontostand des Spielers als String wieder
 
 ##### Nationalbank:
 
@@ -174,10 +190,10 @@ Kommunikation über eine eigens für den Server entwickelte App ermöglichen.
 
 ##### Commands:
 
-- /mail senden [Spielername] <Nachricht> - Sendet eine Nachricht an einen Offline/Online Spieler
-- /mail send [Spielername] <Nachricht> - Sendet eine Nachricht an einen Offline/Online Spieler
+- /mail senden [Spielername] [Nachricht] - Sendet eine Nachricht an einen Offline/Online Spieler
+- /mail send [Spielername] [Nachricht] - Sendet eine Nachricht an einen Offline/Online Spieler
 - /mail empfangen - Forciert beim Befehlsausführenden die Abfrage, ob eine Mail im Postkasten ist
-- /mail öffnen <Nummer> - Öffnet Mail im Postkasten, sofern diese vorhanden ist
+- /mail öffnen [Nummer] - Öffnet Mail im Postkasten, sofern diese vorhanden ist
 
 ##### Permissiongruppe:
 
@@ -276,8 +292,8 @@ in das Plugin geparst wird.
 ##### Teambefehle:
 
 - /gs enteignen [Plotname]
-- /gs setze <owner>/<member> <Plotname> <Spielername>
-- /gs entferne <owner>/<member> <Plotname> <Spielername>
+- /gs setze [Owner]/[Member] [Plotname] [Spielername]
+- /gs entferne [Owner]/[Member] [Plotname] [Spielername]
 - /gs erstellen [Plotname]
 - /gs löschen [Plotname]
 - /gs import [Plotname]
@@ -303,8 +319,8 @@ in das Plugin geparst wird.
 
 ##### Teambefehle:
 
-- /beruf hinzuefuegen <berufname>
-- /beruf entfernen <berufname>
+- /beruf hinzuefuegen [berufname]
+- /beruf entfernen [berufname]
 
 ##### Permissiongruppe:
 
